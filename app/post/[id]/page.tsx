@@ -10,7 +10,8 @@ import { Button } from "@/components/ui/button";
 import { Spinner } from "@/components/ui/spinner";
 import { formatDate } from "@/lib/utils";
 import { useSession } from "@/lib/auth-client";
-import Link from "next/link";
+import { Link } from "next-view-transitions";
+import { MegaphoneIcon } from "lucide-react";
 
 export default function PostDetailPage() {
   const { id } = useParams();
@@ -77,6 +78,14 @@ export default function PostDetailPage() {
           )}
         </div>
         <div className="whitespace-pre-wrap break-words">{postData.name}</div>
+        <Button asChild className="mt-6" variant="destructive">
+          <Link
+            href={`mailto:avalynndev@gmail.com?subject=Report%20Post%20ID%20${post.id}&body=I%20would%20like%20to%20report%20the%20following%20post:%0A%0A${post.name}`}
+          >
+            Report
+            <MegaphoneIcon />
+          </Link>
+        </Button>
       </div>
 
       <h2 className="text-lg font-semibold mb-2">Replies</h2>

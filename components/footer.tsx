@@ -1,5 +1,5 @@
 import { cn } from "@/lib/utils";
-import Link from "next/link";
+import { Link } from "next-view-transitions";
 import { ComponentProps, PropsWithChildren } from "react";
 import { Badge } from "@/components/ui/badge";
 import { Lock } from "lucide-react";

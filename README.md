@@ -53,6 +53,7 @@ npm install
 ```
 
 ### Add a ENV FILE with:
+
 ```env
 NEXT_PUBLIC_DATABASE_URL="postgresql://postgres:password@localhost:5432/anonumu"
 BETTER_AUTH_SECRET="" ## generate-secret.vercel.app/32

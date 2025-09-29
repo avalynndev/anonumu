@@ -3,14 +3,8 @@
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import { formatDate } from "@/lib/utils";
-import {
-  CornerBottomLeftIcon,
-  ChatBubbleIcon,
-  HeartIcon,
-  ReloadIcon,
-} from "@radix-ui/react-icons";
+import { CornerBottomLeftIcon, ReloadIcon } from "@radix-ui/react-icons";
 import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 
 import { db } from "@/db";
@@ -127,15 +121,6 @@ export default function Post() {
                     No replies yet.
                   </div>
                 )}
-              </div>
-
-              <div className="mt-2 flex gap-2">
-                <Button disabled variant="outline" size="icon">
-                  <ChatBubbleIcon className="h-4 w-4" />
-                </Button>
-                <Button disabled variant="outline" size="icon">
-                  <HeartIcon className="h-4 w-4" />
-                </Button>
               </div>
             </div>
           ))

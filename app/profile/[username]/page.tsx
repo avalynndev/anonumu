@@ -3,7 +3,7 @@ import { user, post } from "@/schema";
 import { eq } from "drizzle-orm";
 import { notFound } from "next/navigation";
 import { format } from "date-fns";
-import Link from "next/link";
+import { Link } from "next-view-transitions";
 
 export default async function ProfilePage({ params }: any) {
   const { username } = await params;

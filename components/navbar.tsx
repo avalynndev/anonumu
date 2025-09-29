@@ -15,7 +15,7 @@ import Image from "next/image";
 import { Textarea } from "@/components/ui/textarea";
 import { Github, SquarePlus } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import Link from "next/link";
+import { Link } from "next-view-transitions";
 import { db } from "@/db";
 import { post } from "@/schema";
 import { useRouter } from "next/navigation";
